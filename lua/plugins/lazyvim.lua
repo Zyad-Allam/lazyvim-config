@@ -3,6 +3,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin",
+      transparent_background = true,
     },
   },
   {
@@ -30,7 +31,7 @@ return {
     end,
   },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ui = {
         border = "rounded",
@@ -52,6 +53,18 @@ return {
         float = {
           border = "rounded",
         },
+      },
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      highlights = {
+        -- transparent background everywhere
+        Normal = { bg = "none" },
+        NormalFloat = { bg = "none" },
+        SnacksNormal = { bg = "none" },
+        SnacksFloat = { bg = "none" },
       },
     },
   },
